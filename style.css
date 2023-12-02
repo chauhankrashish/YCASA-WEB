@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+}
+.bar{
+    height: 3px;
+    width: 50px;
+    background-color: #3FC1C9;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4{
+    font-size: 20px;
+    color: #222;
+} 
+
+h6{
+    font-size: 12px;
+    font-weight: 700; 
+}
+p{
+    font-size: 20px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+a{
+    text-decoration: none;    
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+.section-m1{
+    margin: 40px 0;
+}
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 25px;
+    color: #ffffff;
+    background-color: #3FC1C9;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transform: 0.2s;
+}
+button.normal-2{
+    font-size: 14px;
+    font-weight: 400;
+    padding: 8px 15px;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 4px;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+    transform: 0.2s;
+}
+ 
+body{
+    width: 100% ;
+    /* background-color: #e9f1f2; */
+}
+
+/* header start */
+
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    background-color: #fff;
+    padding: 10px 80px;
+    box-shadow: 0 5px 15px rgb(0, 0, 0,0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar #close{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #222;
+    font-size: 24px;
+    
+}
+#mobile,#close{
+    display: none;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 10px;
+    position: relative;
+}
+#navbar li a{
+    font-size: 14px;
+    font-weight: 500;
+    color: #1a1a1a;
+    transition: .3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: #088178;
+}
+
+/* Home Page */
+
+#hero{
+    background: url("img/hero.png");
+    height: 75vh;
+    width: 100%;
+    background-position: top 25% right 10%;
+    background-size: 50% 80%;
+    padding: 0 80px;
+    display: flex;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+ 
+}
+
+#hero h2{
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+#hero .hero-h11{
+    font-weight: 600;
+    color: #274864;
+}
+
+#hero .hero-h12{
+    font-weight: 600;
+    color: #3FC1C9;
+}
+
+#hero p{
+    padding: 15px 0;
+}
+
+#hero .services{
+    display: flex;
+}
+
+#hero .services div{
+    margin-right: 80px;
+    line-height: 10px;
+}
+
+#hero .services h3{
+    font-size: 24px;
+    color: #3FC1C9;
+    font-weight: 600;
+}
+
+#hero .services p{
+    font-size: 12px;
+    font-weight: 600;
+    padding: 0;
+    line-height: 2px;
+    color: #000;
+}
+
+#hero .playstore{
+    margin: 25px 0;
+    cursor: pointer;
+}
+
+#hero .playstore img{
+    height: 41px;
+}
+form{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
+    gap: 10px; 
+}
+form p{
+    font-size: 12px;
+    font-weight: 500;
+}
+.search-div{ 
+    display: inline-block;
+    justify-content: flex-end;
+    background-color: #ffffff; 
+    position: absolute;
+    right: 7%;
+    bottom: 23%;    
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
+}
+.search-div select{
+    border: none;
+    outline: none;
+}
+.search-div .select-div{
+    padding: 10px 15px;
+    border: none;
+    border-right: 1.5px solid grey;
+}
+.search-div .search{
+    background: #3FC1C9;
+    padding: 10px 15px;
+    color: #ffffff;
+}
+
+/* about us  */
+.about {
+    display: flex;
+    height: 85vh;
+}
+.about-txt{
+    margin: 20px 0 0 15px;
+}
+.about-txt .heading{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+} 
+.about .about-img img{
+    height: 100%;
+}
