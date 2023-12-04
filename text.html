@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Six Boxes Slider</title>
+    <style>
+
+        
+/* testimonials  */
+.testimonials-1 .heading{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.testimonials-1 h3{
+    color: #27415E;
+    font-size: 26px;
+    font-weight: 900;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    top:-20px;
+    overflow-x: hidden;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.slides2 {
+    display: flex;
+    gap: 5px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide2 {
+    width: calc(100% / 3); /* Display three boxes at a time */
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    /* background-color: #f0ecec; */
+}
+
+.box {    
+    position: relative;
+    width: 100%;
+    background-color: #eeeaea;
+    color: #fff;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    text-align: left;
+    padding: 15px 25px;
+}
+.box i{
+    font-size: 14px;
+    margin-top: 10px;
+    color: #F4AE23;
+}
+.box .words{
+    font-size: 16px;
+    margin: 25px 0;
+    font-weight: 500;
+    color: #27415E;;
+}
+.box .dot{
+    height: 60px;
+    position: absolute;
+    top: 0;
+    right: 1px;
+    z-index: 1000;
+}
+
+.navigation {
+    position: relative;
+    top: -30px;
+    right: 0px;
+    display: flex;
+    justify-content: flex-end;
+    color: #333;
+}
+
+.prev2 {
+    margin-right: 5px;
+}
+.prev2, .next2 {
+    cursor: pointer;
+    border: 1px solid grey;
+    padding: 3px;
+}
+
+    </style>
+</head>
+<body>
+      
+
+    <!--img testimonials  -->
+    <section class="testimonials-1 section-p1" id="product1">
+        <div class="heading">
+            <p class="bar"></p>
+            <p>TESTIMONIALS</p>
+        </div>
+        <h3>What our client saying.</h3>
+        <div class="navigation">
+            <div class="prev2" onclick="prevSlide2()">&#10094;</div>
+            <div class="next2" onclick="nextSlide2()">&#10095;</div>
+        </div>
+        <div class="slider-container">
+            <div class="slides2">
+                <div class="slide2">
+                    <div class="box">
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="words">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iste reprehenderit possimus repellendus similique quibusdam sit placeat velit commodi perspiciatis.
+                        </div>
+                        <div class="clients">
+                            <div class="person">
+                                <div>
+                                    <img style="width: 30px;" src="./img/test-m-1.png" alt="">
+                                    <div class="person-txt">
+                                        <h4>Skyline Tower</h4>
+                                        <p>Hosted by Donna White</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <img class="dot" src="./img/Group 222.png" alt="">
+                    </div>
+                </div>
+                
+                <div class="slide2">
+                    <div class="box">
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="words">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iste reprehenderit possimus repellendus similique quibusdam sit placeat velit commodi perspiciatis.
+                        </div>
+                        <div class="clients">
+                            <div class="person">
+                                <div>
+                                    <img style="width: 30px;" src="./img/test-m-2.png" alt="">
+                                    <div class="person-txt">
+                                        <h4>Skyline Tower</h4>
+                                        <p>Hosted by Donna White</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <img class="dot" src="./img/Group 222.png" alt="">
+                    </div>
+                </div>
+                
+                <div class="slide2">
+                    <div class="box">
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="words">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iste reprehenderit possimus repellendus similique quibusdam sit placeat velit commodi perspiciatis.
+                        </div>
+                        <div class="clients">
+                            <div class="person">
+                                <div>
+                                    <img style="width: 30px;" src="./img/test-m-3.png" alt="">
+                                    <div class="person-txt">
+                                        <h4>Skyline Tower</h4>
+                                        <p>Hosted by Donna White</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <img class="dot" src="./img/Group 222.png" alt="">
+                    </div>
+                </div>
+                
+                <div class="slide2">
+                    <div class="box">
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="words">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iste reprehenderit possimus repellendus similique quibusdam sit placeat velit commodi perspiciatis.
+                        </div>
+                        <div class="clients">
+                            <div class="person">
+                                <div>
+                                    <img style="width: 30px;" src="./img/Ellipse 19209 (1).png" alt="">
+                                    <div class="person-txt">
+                                        <h4>Skyline Tower</h4>
+                                        <p>Hosted by Donna White</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <img class="dot" src="./img/Group 222.png" alt="">
+                    </div>
+                </div>
+                
+                <div class="slide2">
+                    <div class="box">
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="words">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iste reprehenderit possimus repellendus similique quibusdam sit placeat velit commodi perspiciatis.
+                        </div>
+                        <div class="clients">
+                            <div class="person">
+                                <div>
+                                    <img style="width: 30px;" src="./img/Ellipse 19209 (1).png" alt="">
+                                    <div class="person-txt">
+                                        <h4>Skyline Tower</h4>
+                                        <p>Hosted by Donna White</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <img class="dot" src="./img/Group 222.png" alt="">
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+
+
+
+    <script>
+        let currentIndex2 = 0;
+        const totalSlides2 = document.querySelectorAll('.slide2').length;
+
+        function showSlide3(index) {
+            const slides2 = document.querySelector('.slides2');
+            if (index < 0) {
+                currentIndex2 = totalSlides2 - 3;
+            } else if (index > totalSlides2 - 3) {
+                currentIndex2 = 0;
+            } else {
+                currentIndex2 = index;
+            }
+
+            const translateValue = -currentIndex2 * (100 / 3);
+            slides2.style.transform = `translateX(${translateValue}%)`;
+        }
+
+        function prevSlide2() {
+            showSlide3(currentIndex2 - 1);
+        }
+
+        function nextSlide2() {
+            showSlide3(currentIndex2 + 1);
+        }
+    </script>
+</body>
+</html>
