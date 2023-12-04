@@ -9,6 +9,7 @@
     font-family: 'Roboto', sans-serif;
     letter-spacing: 1px;
 }
+
 .bar{
     height: 3px;
     width: 50px;
@@ -98,6 +99,10 @@ body{
     position: sticky;
     top: 0;
     left: 0;
+}
+#header .logo-div{
+    display: flex;
+    align-items: center;
 }
 
 #navbar{
@@ -239,7 +244,7 @@ form p{
 /* about us  */
 .about {
     display: flex;
-    height: 85vh;
+    flex-wrap: wrap;
 }
 .about-txt{
     margin: 20px 0 0 15px;
@@ -256,6 +261,10 @@ form p{
     font-size: 26px;
     font-weight: 900;
 }
+
+.about .about-img{
+    height: 400px;
+} 
 
 .about .about-img img{
     height: 100%;
@@ -518,6 +527,10 @@ form p{
 
 
 /* img testimonials  */
+
+#testimonials-2{
+    margin-bottom: -100px;
+}
 .testimonials-1 .heading{
     display: flex;
     align-items: center;
@@ -540,9 +553,10 @@ form p{
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
+
 .slides2 {
     display: flex;
-    gap: 15px;
+    gap: 5px;
     transition: transform 0.5s ease-in-out;
 }
 
@@ -567,7 +581,7 @@ form p{
     background: #fff;
     padding: 5px 7.5px;
     color: skyblue;
-    position: absolute;
+    position: relative;
     bottom: 133px;
     font-size: 13px;
     border-radius: 0px;
@@ -609,4 +623,73 @@ form p{
     cursor: pointer;
     border: 1px solid grey;
     padding: 3px;
+}
+
+/* news letter  */
+.nl-body{
+    background-color: #3FC1C9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    position: relative;
+    top: 75px;
+    flex-wrap: wrap;
+} 
+.nl-body h3{
+    color: #fff;
+    font-size: 32px;
+}
+.nl-body p{
+    color: #fff;
+    font-size: 14px;
+    padding: 0;
+    text-transform: capitalize;
+    line-height: 0px;
+}
+.news-email{
+    display: flex;
+    align-items: center;
+}
+.news-email input{
+    width: 300px;
+    font-weight: 500;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #0E2A3E;
+    border-right: none;
+}
+.news-email h4{
+    background-color: #0E2A3E;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+
+/* footer  */
+
+footer{
+    background-color: #0E2A3E;
+    height: 100px;
+    bottom: 75px;
+}
+
+@media (max-width:1065px){
+    .about .about-img {
+        height: 500px;
+        width: 500px;
+    }
+    .nl-body{
+        align-items: center;
+    }
+}
+@media (max-width:1065px){
+    .search-div {
+        right: 20%;
+        bottom: 10%;
+    }
+}
+@media (max-width:870px){
+    
 }
